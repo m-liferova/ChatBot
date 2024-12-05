@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кондитерская на заказ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #f8b195;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 2em 0;
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product-item {
+            flex: 1 1 calc(50% - 20px);
+            background: #fff3e0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .product-item img {
+            width: 100%;
+            height: auto;
+        }
+        .product-item h3 {
+            padding: 0.5em;
+            text-align: center;
+            background: #f67280;
+            color: white;
+        }
+        .form {
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .form input, .form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form button {
+            background-color: #f67280;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background: #355c7d;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Кондитерские изделия на заказ</h1>
+        <p>Бенто торты, новогодние пряничные домики, рулеты и детские торты!</p>
+    </header>
+
+    <div class="container">
+        <section id="products">
+            <h2>Наши изделия</h2>
+            <div class="product">
+                <div class="product-item">
+                    <img src="bento-cake.jpg" alt="Бенто торт">
+                    <h3>Бенто торт</h3>
+                </div>
+                <div class="product-item">
+                    <img src="gingerbread-house.jpg" alt="Новогодний пряничный домик">
+                    <h3>Пряничный домик</h3>
+                </div>
+                <div class="product-item">
+                    <img src="roll-cake.jpg" alt="Рулет">
+                    <h3>Рулет</h3>
+                </div>
+                <div class="product-item">
+                    <img src="kids-cake.jpg" alt="Детский торт">
+                    <h3>Детский торт</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="order">
+            <h2>Сделать заказ</h2>
+            <form class="form">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="tel" name="phone" placeholder="Ваш телефон" required>
+                <textarea name="details" placeholder="Ваши пожелания" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>Контакты: +7 (900) 123-45-67 | <a href="https://www.instagram.com/yourprofile" style="color: white;">Instagram</a></p>
+        <p>Copyright &copy; 2024 Кондитерская</p>
+    </footer>
+</body>
+</html>
